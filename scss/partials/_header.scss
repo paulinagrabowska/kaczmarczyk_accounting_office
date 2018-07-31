@@ -1,0 +1,129 @@
+/* LOGO */
+.logo .name {
+    margin: 0 auto;
+    display: block;
+    width: 60rem;
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 2rem;
+    letter-spacing: 0.6rem;
+    padding: 2rem;
+    white-space: pre;
+  }
+  
+  .founder {
+    margin-bottom: 1rem;
+  }
+  .company {
+    border-top: 0.1rem solid $logo-line;
+    padding-top: 1rem;
+    text-transform: uppercase;
+  }
+
+/* MENU */
+header {
+   nav {
+    padding: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: $transparent-media-bg;
+       ul {
+        width: 50%;
+        display: flex;
+        list-style: none;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 0 auto;
+           li {
+               a {
+                display: inline-block;
+                text-decoration: none;
+                color: $link-grey;
+                font-size: 1.68rem;
+                padding: 0;
+                position: relative;
+                letter-spacing: 0.2rem;
+                font-weight: bold;
+
+                &:hover {
+                    color: $link-hover;
+                    transition: all 1s;
+                }
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    padding: 0px;
+                    display: inline-block;
+                    width: 0%;
+                    top: -1.1rem;
+                    border-top: .2rem solid $brown-shadow-border;
+                }
+                &:hover::before {
+                    transition: all 1s;
+                    width: 100%;
+                }
+               }
+           }
+       }
+   }    
+}
+
+/* HEADING*/
+div.slider {
+    height: 50vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+  
+  }
+  /*SLIDER*/ 
+  @keyframes animacja {
+      25% {opacity: 1;} /*opacity: 1- całkowicie nieprzezroczysty*/
+      37% {opacity: 0;} 
+  }
+
+  div.slider {
+      .slide{
+        position: absolute;
+        opacity: 0;
+        width: 100%;
+        height: 100%;
+      }
+      .first {
+        background: url('../img/1.jpeg') center/cover no-repeat;
+        animation: animacja 20s ease infinite 0s; 
+      }
+      .second {
+        background: url('../img/2.jpeg') center/cover no-repeat;
+        animation: animacja 20s ease infinite 5s;
+      }
+      .third {
+        background: url('../img/3.jpeg') center/cover no-repeat;
+        animation: animacja 20s ease infinite 10s;
+    }
+    .fourth {
+        background: url('../img/4.jpg') center/cover no-repeat;
+        animation: animacja 20s ease infinite 15s;
+    }
+      }
+  
+  .overlay {
+    position: relative;
+    left: 60%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: $overlay-bg;
+    height: 100%;
+    width: 30rem;
+    padding: 1.5rem;
+
+    span {
+        font-size: 1.6rem;
+        font-weight: bold;
+        padding-bottom: 1rem;
+    }
+  }
+  

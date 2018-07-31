@@ -1,0 +1,69 @@
+section {
+    position: relative;
+    width: 80%;
+    padding: 1%;
+    margin: 1rem auto;
+    right: 0;
+    left: 0;
+    text-align: justify;
+
+    .box {
+        position: relative;
+        background: $white-box-bg;
+        float: left;
+        margin: 1%;
+        padding: 1%;
+        border-radius: 0.5rem;
+        text-align: center;
+        transition: all 0.8s;
+
+        &:hover {
+            box-shadow: 0 0 1rem $brown-shadow-border;
+        }
+    }
+
+    .first {
+        width: 31.3%;
+        padding-bottom: 2rem;
+    }
+
+    .second {
+        width: 48%;
+    }
+
+    .last {
+        width: 100%;
+        margin-bottom: 4%;
+        padding: 1rem;
+        background-color: $white-box-bg;
+    }
+
+    p {
+        padding: 1rem;
+        text-align: justify;
+    }
+
+    h3 {
+        padding: 1rem;
+        text-align: center;
+        font-size: 1.6rem;
+        font-weight: bold;
+    }
+}
+
+.clear {
+    clear: both;
+  }
+
+.dotted {
+    position: relative;
+    width: 80%;;
+    border-top: .1rem dotted $brown-shadow-border ;
+    margin: 0 auto;    
+}
+
+/* MATERIAL ICONS*/
+i.material-icons {
+    color: $brown-shadow-border;
+    font-size: 7.2rem;
+  }

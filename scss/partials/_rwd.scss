@@ -1,0 +1,28 @@
+/* RWD*/
+
+@media all and (max-width: 760px) {
+    .logo .name {
+      width: 100%;
+    }
+    nav ul {
+      flex-direction: column; 
+    }
+
+    nav ul li {
+      border-left: .6rem solid transparent;
+      border-right: .6rem solid transparent;
+      border-bottom: 1.2rem solid transparent;
+    }
+    section .box {
+      position: relative;
+      background: #f7f7f7;
+      float: none;
+      
+    }
+    section div.first, section div.second {
+      width: 100%;
+      margin: 1rem;
+  
+    }
+  }
+  

@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 10px;
+    font-family: "Quicksand", sans-serif;
+  }
+  
+  body {
+    font-size: 1.2rem;
+    color: $basic-black;
+  }
+  p {
+    line-height: 1.68rem;
+  }
+
+  /*SOCIAL MEDIA BAR*/
+div.media_bar{
+    display: flex;
+    align-items: center;
+    top: 50%;
+    position: fixed;
+    height: 5.5rem;
+    width: 21.5rem;
+    border-radius: 0.5rem;
+    border: 0.1rem solid $grey-media-border;
+    background: $transparent-media-bg;
+    left: -16rem;
+    border-left: none;
+    transition: all 1s linear;
+
+    &:hover{
+        left: 0;
+    }
+  }
+  .media {
+      position: absolute; 
+      height: 100%;
+      display: flex;
+      align-items: center;
+      padding: 1.7rem;
+  
+  }
+  .media.content {
+    widows: 16rem;
+    right: -1.5rem;
+  }
+  
+  .sprites_media {
+    background: url('../img/sprites_spolecznosciowe.png') no-repeat;
+    width: 4.3rem;
+    height: 4.2rem;
+    overflow: hidden;
+    display: inline-block;
+    transition: opacity 1s ease;
+    opacity: 0.5;
+    margin: .3rem;
+
+    &:hover{
+        opacity: 1;
+    }
+  }
+  
+  div.facebook {
+    background-position: 0px -1px;
+    
+    &:hover {
+    background-position: 0px -43px;
+   } 
+  }
+   
+  div.twitter {
+    background-position: -52px -1px;
+
+    &:hover {
+    background-position: -52px -43px;
+    }
+  }
+  
+  
+  div.youtube {
+    background-position: -104px -1px;
+
+    &:hover {
+        background-position: -104px -43px;
+        opacity: 1;
+    }
+  }
+  
+  div.in {
+    background-position: -155px -1px;
+
+    &:hover {
+        background-position: -155px -43px;
+    }
+  }
+  
